@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebGL Crosswalk Sample</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+        
+        <script src="cordova.js"></script>
+        
+        <script type="text/javascript">
+            document.addEventListener("deviceready", function() { if( window.Cordova && navigator.splashscreen ) { navigator.splashscreen.hide(); } }, false);
+        </script>
+        
+        <link rel="stylesheet" type="text/css" href='main.css' />
+    </head>
+
+    <body>
+	    <div id="webgl"></div>
+	    <a href="http://thematicmapping.org/" class="tm">
+		    <img src="http://earthatlas.info/img/thematicmapping.png" />
+	    </a>
+	    <script src="three.min.js"></script>
+	    <script src="Detector.js"></script>		
+	    <script src="TrackballControls.js"></script>		
+	    <script src="main.js"></script>  
+    </body>
+</html>
